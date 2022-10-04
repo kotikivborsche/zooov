@@ -1,0 +1,71 @@
+@media(max-width:400px){
+    .container{
+        max-width:327px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .wrapper{
+        max-width: 375px;
+    }
+
+
+    .head__menu{
+        width:380px;
+    
+
+    }
+    .barf-caption__pic{
+        width: 100%;
+        
+
+
+    }
+    .barf-container{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+        
+    }
+    .barf-caption{
+        margin-bottom: 40px;
+    }
+    .barf-food__block:last-child{
+        display: none;
+    }
+    .barf-food__block{
+        height:427px;
+        width:100%;
+    }
+    .barf-food{
+        height:427px;
+        width: 100%;
+
+    }
+    .barf-food__list{
+        height:427px;
+    }
+    .barf-food__list-item{
+        margin-right: 0;
+        width: 243px;
+        
+    }
+    .barf-food__line {
+        display: none;
+    }
+    .ration-header__p{
+        display:none;
+    }    
+    .ration-calcucation__text{
+        width: 97%;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 37px;
+    }
+    .ration-calcucation{
+        flex-direction:column ;
+        
+    }
+    .ration-calcucation__line{
+        display:none;
+    }
+}
