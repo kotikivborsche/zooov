@@ -164,18 +164,18 @@
 
             </div>
 
-            <div class="ration-calcucation">
-                <!-- <div class="ration-calcucation__"> -->
-                    <p class="ration-calcucation__text">Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</p>
+            <div class="ration-calculation">
+                <!-- <div class="ration-calculation__"> -->
+                    <p class="ration-calculation__text">Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</p>
                     
                 <!-- </div> -->
 
-                <!-- <div class="ration-calcucation__button"> -->
-                    <a href="#" class="button red-button calculation-button">Расчитать</a>
+                <!-- <div class="ration-calculation__button"> -->
+                    <a  class="button red-button calculation-button  js-modal-open" data-open="#modal-1">Расчитать</a>
                     
                 <!-- </div> -->
 
-                <img class="ration-calcucation__line" src="img/dashed_line.svg" alt="">
+                <img class="ration-calculation__line" src="img/dashed_line.svg" alt="">
             </div>
         </div>
     </section>
@@ -280,7 +280,7 @@
                 <h2 class="faq-title">Частые вопросы</h2>
                 <div class="faq-qutstions">
 
-                    <div class="faq-question active">
+                    <div class="faq-question">
                         <div class="faq-question__header">
                             <h2 class="faq-question__text">Не опасны ли бактерии, которые находятся в сыром мясе?</h2>
                             <svg class="plus" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -429,7 +429,7 @@
                                 персональных данных</p>
                             </label>
 
-                            <a class="button pale-button" href="">Отправить</a>
+                            <a class="button pale-button js-modal-open" data-open="#modal-2">Отправить</a>
                         </div>
                     </div>
                 </div>
@@ -450,5 +450,85 @@
     </section>
 
 
+
+
+
+
+
+
+
+    <div class="modal" id="modal-1">
+        <div class="modal__wrapper">
+           <div class="modal__close"><img src="img/X.jpg"></div>
+           <div class="modal__content">
+               <h3 class="modal__title">Рассчет рациона</h1>
+               <p class="modal__description">Заполните информацию и мы свяжемся с вами, чтобы подсказать с подбором рациона для вашего хвостика. Или напишите нам в мессендерах WhatsApp и Telegram.</p>
+               <form class="order-form">
+                    <div class="order-form__field-wrapper">
+                                <div class=" order-form__radio">
+                                    <input class="order-form__text" name="type" id="type1" type="radio" />
+                                    <label class="" for="type1">Взрослая собака</label>
+                                </div>
+                                <div class="">
+                                    <input class="order-form__text" name="type" id="type2" type="radio" />
+                                    <label class="" for="type2">Щенок</label>
+                                </div>
+                            </div>
+                            <div class="order-form__field-wrapper">
+                                <input class="text-field order-form__field" type="text" />
+                                <label class="order-form__label">Вес (кг)</label>
+                            </div>
+                            <div class="order-form__field-wrapper">
+                                <input class="text-field order-form__field" type="text" />
+                                <label class="order-form__label">Ваше имя</label>
+                            </div>
+                            <div class="order-form__field-wrapper">
+                                <input class="text-field order-form__field" type="text" />
+                                <label class="order-form__label">Телефон</label>
+                            </div>
+                            <div class="order-form__field-wrapper">
+                                <input class="text-field order-form__field" type="text" />
+                                <label class="order-form__label">Ваше имя</label>
+                            </div>
+                            <div class="order-form__field-wrapper">
+                                <textarea class="textarea-field order-form__field" type="text"></textarea>
+                                <label class="order-form__label">Если у вашего хвостика есть особенности здоровья - напишите об этом...</label>
+                            </div>
+                            <button class="order-form__btn button red-button">Рассчитать</button>
+                        </form>
+                </div>
+    
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal-2">
+        <div class="modal__wrapper">
+           <div class="modal__close"><img src="img/X.jpg"></div>
+           <div class="modal__content">
+               <h3 class="modal__title">Рассчет рациона</h1>
+               <p class="modal__description">Сэнк ю вери мач.</p>
+        
+                    
+                                
+                            <!-- <button class="order-form__btn button red-button">Рассчитать</button> -->
+                       
+                </div>
+          
+
+    
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+    <script src="script/script.js"></script>
 </body>
 </html>
