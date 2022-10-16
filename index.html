@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="import" href="modal_forms.html">
     <!-- стили -->
+    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-media.css">
@@ -14,16 +17,36 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@700&family=Roboto:wght@500&display=swap" rel="stylesheet">
 
+    <!-- свайпер -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <title>ZOOOV</title>
 </head>
 <body class="wrapper">
 
     <!-- menu -->
     <header class="head__menu" id="header">
-    <!-- <header class="head__menu active" id="header"> -->
         <div class="container">         
             <div class="menu">
-                <div class="logo"><a href="#header"><img  src="img/menu_logo.png" alt=""></a></div>
+                
+
+                <!-- <div class="logo"><a href="#header"><img  src="img/menu_logo.png" alt=""></a></div> -->
+                <div class="burger">
+                    <div class="logo"><a href="#header"><img  src="img/menu_logo.png" alt=""></a></div>
+                    
+                    <svg class="burger__button-svg" width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="bar" d="M1 9H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="bar" d="M1 1H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="bar" d="M1 17H28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                
+
+
+                    
+                </div>
                 <div class="menu-items">
                     <div class="menu-item"><a href="#barf">BARF</a></div>
                     <div class="menu-item"><a href="#ration">Рационы</a></div>
@@ -33,15 +56,48 @@
                     <div class="menu-item"><a href="#faq">FAQ</a></div>
                     <div class="menu-item"><a href="#contacts">Контакты</a></div>
                 </div>
+
+                
             </div>  
+
+            
+            
         </div>
     </header>
 
+
+
+
+<!--
+    <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <a href="#" class="logo" id="logo">Logo</a>
+            <ul class="menu" id="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Benefits</a></li>
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    -->
     <!-- big dog pic -->
     <section class="big-boop">
 
         <div class="container">
             <div class="big-boop__content">
+                
                 <h1 class="big-boop__h1">
                     Питание, <br>которое полюбит <br>ваш хвостик
                 </h1>
@@ -79,7 +135,40 @@
                 <img class="barf-caption__pic" src="img/barf_pic.png" alt=""> 
             </div>
 
-            <div class="barf-food">
+            <div class="swiper swiper2">
+                <div class="barf-food swiper-wrapper">
+                    <div class="barf-food__block swiper-slide">
+                        <p class="barf-food__head">Для взрослых</p>
+                        <div class="barf-food__list">
+                            <div class="barf-food__list-item"><img src="img/food_1.svg" alt="">Мясо – 70%</div>
+                            <div class="barf-food__list-item"><img src="img/food_2.svg" alt="">Кости – 10%</div>
+                            <div class="barf-food__list-item"><img src="img/food_3.svg" alt="">Овощи – 7%</div>
+                            <div class="barf-food__list-item"><img src="img/food_4.svg" alt="">Печень – 5%</div>
+                            <div class="barf-food__list-item"><img src="img/food_5.svg" alt="">Субпродукты – 5%</div>
+                            <div class="barf-food__list-item"><img src="img/food_6.svg" alt="">Семена/Орехи – 2%</div>
+                            <div class="barf-food__list-item"><img src="img/food_7.svg" alt="">Фрукты – 1%</div>
+                        </div> 
+                    </div>
+
+                    <div class="barf-food__block swiper-slide">
+                        <p class="barf-food__head">Для щенков</p>
+                        <div class="barf-food__list">
+                            <div class="barf-food__list-item"><img src="img/food_1.svg" alt="">Мясо – 58%</div>
+                            <div class="barf-food__list-item"><img src="img/food_2.svg" alt="">Кости – 17%</div>
+                            <div class="barf-food__list-item"><img src="img/food_3.svg" alt="">Овощи – 7%</div>
+                            <div class="barf-food__list-item"><img src="img/food_4.svg" alt="">Печень – 7%</div>
+                            <div class="barf-food__list-item"><img src="img/food_5.svg" alt="">Субпродукты – 7%</div>
+                            <div class="barf-food__list-item"><img src="img/food_6.svg" alt="">Семена/Орехи – 2%</div>
+                            <div class="barf-food__list-item"><img src="img/food_7.svg" alt="">Фрукты – 1%</div>
+                        </div> 
+                    </div>
+
+                    <img class="barf-food__line" src="img/dashed_line.svg" alt="">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+            
+            <!-- <div class="barf-food">
                 <div class="barf-food__block">
                     <p class="barf-food__head">Для взрослых</p>
                     <div class="barf-food__list">
@@ -107,9 +196,14 @@
                 </div>
 
                 <img class="barf-food__line" src="img/dashed_line.svg" alt="">
-            </div>
+            </div> -->
+                
         </div>
     </section>
+
+
+
+
 
     <!-- ZOOOV ration -->
     <section class="" id="ration">
@@ -124,46 +218,49 @@
                 </p>
             
             </div>
-            <div class="ration-cards">
-                <div class="ration-cards__item">
-                    <img class="ration-cards__item__mark" src="img/card_12.png" alt="">
-                    <img class="ration-cards__item__img" src="img/card_1.png" alt="">
-                    <p class="ration-cards__item__for">Для взрослых собак</p>
-                    <p class="ration-cards__item__ing">Индейка/Говядина</p>
-                    <p class="ration-cards__item__desc">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
-                    <p class="ration-cards__item__w">700г / 500г / 300г / 150г / 100г</p>
-                    <a href="#" class="button white-button ration__button">Заказать</a>
-                </div>
-                <div class="ration-cards__item">
-                    <img class="ration-cards__item__mark" src="img/card_12.png" alt="">
-                    <img class="ration-cards__item__img" src="img/card_2.png" alt="">
-                    <p class="ration-cards__item__for">Для щенков</p>
-                    <p class="ration-cards__item__ing">Индейка/Говядина</p>
-                    <p class="ration-cards__item__desc">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
-                    <p class="ration-cards__item__w">700г / 500г / 300г / 150г / 100г</p>
-                    <a href="#" class="button white-button ration__button">Заказать</a>
-                </div>
-                <div class="ration-cards__item">
-                    <img class="ration-cards__item__mark" src="img/card_34.png" alt="">
-                    <img class="ration-cards__item__img" src="img/card_3.png" alt="">
-                    <p class="ration-cards__item__for">Для взрослых собак</p>
-                    <p class="ration-cards__item__ing">Баранина/Кролик</p>
-                    <p class="ration-cards__item__desc">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
-                    <p class="ration-cards__item__w">700г / 500г / 300г / 150г / 100г</p>
-                    <a href="#" class="button white-button ration__button">Заказать</a>
-                </div>
-                <div class="ration-cards__item">
-                    <img class="ration-cards__item__mark" src="img/card_34.png" alt="">
-                    <img class="ration-cards__item__img" src="img/card_4.png" alt="">
-                    <p class="ration-cards__item__for">Для щенков</p>
-                    <p class="ration-cards__item__ing">Баранина/Кролик</p>
-                    <p class="ration-cards__item__desc">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
-                    <p class="ration-cards__item__w">700г / 500г / 300г / 150г / 100г</p>
-                    <a href="#" class="button white-button ration__button">Заказать</a>
-                </div>
+            <div class="swiper swiper1">
 
+                <div class="ration-cards swiper-wrapper">
+                    <div class="ration-cards__item swiper-slide">
+                        <img class="ration-cards__item__mark" src="img/card_12.png" alt="">
+                        <img class="ration-cards__item__img" src="img/card_1.png" alt="">
+                        <p class="ration-cards__item__for">Для взрослых собак</p>
+                        <p class="ration-cards__item__ing">Индейка/Говядина</p>
+                        <p class="ration-cards__item__desc">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+                        <p class="ration-cards__item__w">700г / 500г / 300г / 150г / 100г</p>
+                        <a href="#" class="button white-button ration__button">Заказать</a>
+                    </div>
+                    <div class="ration-cards__item swiper-slide">
+                        <img class="ration-cards__item__mark" src="img/card_12.png" alt="">
+                        <img class="ration-cards__item__img" src="img/card_2.png" alt="">
+                        <p class="ration-cards__item__for">Для щенков</p>
+                        <p class="ration-cards__item__ing">Индейка/Говядина</p>
+                        <p class="ration-cards__item__desc">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+                        <p class="ration-cards__item__w">700г / 500г / 300г / 150г / 100г</p>
+                        <a href="#" class="button white-button ration__button">Заказать</a>
+                    </div>
+                    <div class="ration-cards__item swiper-slide">
+                        <img class="ration-cards__item__mark" src="img/card_34.png" alt="">
+                        <img class="ration-cards__item__img" src="img/card_3.png" alt="">
+                        <p class="ration-cards__item__for">Для взрослых собак</p>
+                        <p class="ration-cards__item__ing">Баранина/Кролик</p>
+                        <p class="ration-cards__item__desc">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+                        <p class="ration-cards__item__w">700г / 500г / 300г / 150г / 100г</p>
+                        <a href="#" class="button white-button ration__button">Заказать</a>
+                    </div>
+                    <div class="ration-cards__item swiper-slide">
+                        <img class="ration-cards__item__mark" src="img/card_34.png" alt="">
+                        <img class="ration-cards__item__img" src="img/card_4.png" alt="">
+                        <p class="ration-cards__item__for">Для щенков</p>
+                        <p class="ration-cards__item__ing">Баранина/Кролик</p>
+                        <p class="ration-cards__item__desc">Подходит для ежедвеного кормления. Богат животными белками и Омега-3.</p>
+                        <p class="ration-cards__item__w">700г / 500г / 300г / 150г / 100г</p>
+                        <a href="#" class="button white-button ration__button">Заказать</a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-
             <div class="ration-calculation">
                 <!-- <div class="ration-calculation__"> -->
                     <p class="ration-calculation__text">Рассчитаем в каком количестве нужно кормить вашего хвостика рационами Zooov</p>
@@ -171,7 +268,7 @@
                 <!-- </div> -->
 
                 <!-- <div class="ration-calculation__button"> -->
-                    <a  class="button red-button calculation-button  js-modal-open" data-open="#modal-1">Расчитать</a>
+                    <a  class="button red-button calculation-button  js-modal-open" data-open="#modal-1">Рассчитать</a>
                     
                 <!-- </div> -->
 
@@ -399,8 +496,8 @@
                         <h2 class="contacts__head">Контакты</h2>
                         <p class="contacts__text">Вы всегда можете с нами связаться по телефону или в мессенджерах</p>
                         <p class="contacts__phone">+7 (900)000-00-00</p>
-                        <div class="pink-button"><a class="button contacts-button whatsapp" href="#">Написать в WhatsApp</a></div>
-                        <div class="pink-button"><a class="button contacts-button telegram" href="#">Написать в Telegram</a></div>
+                        <div class="pink-button"><a class="button contacts-button whatsapp">Написать в WhatsApp</a></div>
+                        <div class="pink-button"><a class="button contacts-button telegram">Написать в Telegram</a></div>
                         <p class="contacts__text">Подписывайтесь на наш <a class="contacts__inst" href="https://www.instagram.com/zooov.ru">Instagram</a>
                             и следите за новостями</p>
                     </div>
@@ -456,20 +553,20 @@
 
 
 
-
+<!-- modal forms  -->
     <div class="modal" id="modal-1">
         <div class="modal__wrapper">
-           <div class="modal__close"><img src="img/X.jpg"></div>
+           <div class="modal__close"><img src="img/X.png"></div>
            <div class="modal__content">
                <h3 class="modal__title">Рассчет рациона</h1>
                <p class="modal__description">Заполните информацию и мы свяжемся с вами, чтобы подсказать с подбором рациона для вашего хвостика. Или напишите нам в мессендерах WhatsApp и Telegram.</p>
                <form class="order-form">
                     <div class="order-form__field-wrapper">
-                                <div class=" order-form__radio">
+                                <div class="order-form__radio">
                                     <input class="order-form__text" name="type" id="type1" type="radio" />
                                     <label class="" for="type1">Взрослая собака</label>
                                 </div>
-                                <div class="">
+                                <div class="order-form__radio">
                                     <input class="order-form__text" name="type" id="type2" type="radio" />
                                     <label class="" for="type2">Щенок</label>
                                 </div>
@@ -504,14 +601,14 @@
 
     <div class="modal" id="modal-2">
         <div class="modal__wrapper">
-           <div class="modal__close"><img src="img/X.jpg"></div>
+           <div class="modal__close"><img src="img/X.png"></div>
            <div class="modal__content">
                <h3 class="modal__title">Рассчет рациона</h1>
-               <p class="modal__description">Сэнк ю вери мач.</p>
+               <p class="modal__description pp ppp p">Сэнк ю вери мач.</p>
         
                     
                                 
-                            <!-- <button class="order-form__btn button red-button">Рассчитать</button> -->
+                           
                        
                 </div>
           
@@ -528,7 +625,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 </html>

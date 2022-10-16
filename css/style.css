@@ -41,6 +41,7 @@ h2{
 	margin: 0 auto;
 	padding: 9px;
 	width: 1440px ;
+	
 	/* height: 100%; */
 	z-index: 20;
 	transition: all 0.3s;
@@ -67,6 +68,13 @@ h2{
 	justify-content: space-between;
 	align-items: center;
 	width: 65%;
+}
+
+.burger {
+	/* display: flex;
+	justify-content: space-between;
+	align-items: center; */
+	/* width: 65%; */
 }
 .logo {
 	
@@ -135,11 +143,10 @@ h2{
 	z-index: 10;
 }
 
-
-
-
-button {cursor: url(/img/pointer.svg),pointer;}
-
+button {
+	cursor: url(/img/pointer.svg),pointer;
+	border: none;
+}
 
 .red-button {
 	background-color: #961914;
@@ -204,13 +211,25 @@ button {cursor: url(/img/pointer.svg),pointer;}
 	margin-bottom: 200px;
 	justify-content: space-between;
 }
+
+.barf-slider__swiper{
+	background: #EAD1D0;
+	margin-bottom: 200px;
+	
+}
 .barf-food__line {
 	position: absolute;
 	top: 44px;
 }
+
+#barf-id .barf-food__block{
+	width: 750px;
+}
 .barf-food__block {
-	margin: 32px 80px;
 	width: 100%;
+	margin: 50px 50px;
+	/* padding: 56px 50px; */
+	
 }
 .barf-food__head {
 	font-weight: 600;
@@ -219,9 +238,10 @@ button {cursor: url(/img/pointer.svg),pointer;}
 	text-transform: uppercase;
 }
 .barf-food__list {
+
 	display: flex;
 	flex-direction: column;
-	height: 180px;
+	max-height: 180px;
 	flex-wrap: wrap;
 }
 .barf-food__list-item{
@@ -770,82 +790,106 @@ textarea::placeholder,input::placeholder {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
     align-items: center;
     justify-content: center;
     display: none;
+	
 	z-index: 500;
+	cursor: url(/img/pointer.svg),pointer;
 }
-.modal._active{
+.modal.active{
     display: flex;
 }
 .modal__wrapper {
+	cursor: default;
     background-color: white;
     padding: 56px;
     max-width: 548px;
+	/* max-height: 826px; */
     position: relative;
 }
 
 .modal__close {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 23px;
+    top: 23px;
 }
-
 
 .modal__title {
     font-weight: 700;
-font-size: 40px;
-line-height: 130%;
-/* identical to box height, or 52px */
-
-letter-spacing: 0.02em;
-
-color: #961914;
-margin-bottom: 16px;
+	font-size: 40px;
+	line-height: 130%;
+	letter-spacing: 0.02em;
+	color: #961914;
+	margin-bottom: 16px;
 }
 
 .modal__description {
     margin-bottom: 42px;
 }
-
+.order-form__radio{
+	margin-bottom: 12px;
+}
+.order-form__radio label{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	color: #000000;
+}
 .order-form__field-wrapper {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 .order-form__label{
     position: absolute;
     top: 5px;
     left: 10px;
     font-weight: 400;
-font-size: 12px;
-line-height: 140%;
-padding-right: 10px;
-color: #000000;
-opacity: 0.6;
+	font-size: 12px;
+	line-height: 140%;
+	padding-right: 10px;
+	color: #000000;
+	opacity: 0.6;
 }
 .order-form__field{
     width: 100%;
 }
 .text-field {
     background: #F4F5F5;
-border-radius: 8px;
-height: 48px;
-border: none;
-padding: 10px;
-padding-top: 30p
-font-weight: 400;
-font-size: 14px;
+	border-radius: 8px;
+	height: 48px;
+	border: none;
+	padding: 10px;
+	padding-top: 30px;
+	font-weight: 400;
+	font-size: 14px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	color: #000000;
 }
 .textarea-field{
-background: #F4F5F5;
-border-radius: 8px;
-height: 110px;
+	background: #F4F5F5;
+	border-radius: 8px;
+	height: 110px;
 
-padding: 10px;
-font-weight: 400;
-font-size: 14px;
-padding-top: 40px;
+	padding: 10px;
+	font-weight: 400;
+	font-size: 14px;
+	padding-top: 40px;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	color: #000000;
 }
 .order-form__btn {
     width: 100%;
@@ -856,4 +900,17 @@ padding-top: 40px;
 	cursor: url(/img/pointer.svg),pointer;
 }
 
+.burger svg{
+	display: none;
+	cursor: url(/img/pointer.svg),pointer;
+	position: relative;
 
+}
+  
+/* .popup {
+	display: none;
+} */
+
+.burger__button-svg{
+	z-index: 10000;
+}

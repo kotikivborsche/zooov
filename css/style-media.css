@@ -1,4 +1,85 @@
-@media(max-width:400px){
+@media(max-width:376px){
+
+    /*-------------------------burger menu--------------------*/
+    /* .menu .menu-items {
+        display: none;
+    } */
+    
+      .burger svg{
+
+        display: block;
+        height: 20px;
+        width: 30px;
+      }
+      .burger{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+    
+     
+    
+      .bar {
+        display: block;
+        stroke: white;
+      }
+
+      .menu-items .menu-item a {
+        color: #000000;
+      }
+      .burger.active .bar {
+        stroke: #000000;
+      }
+
+      .menu-items {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        position: fixed;
+
+        top: -100%;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: #fff;
+        padding: 70px 10px 20px 10px;
+        z-index: 10;
+   
+        transition: all 1s; 
+      }
+      .menu-items.active {
+        top:0%;
+      }
+
+      .menu-item{
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+      }
+
+
+    
+     .burger__button-svg{
+      
+     }
+    
+      body.noscroll {
+        overflow: hidden;
+      }
+
+      .head__menu.active .bar{
+        stroke: #000;
+
+      }
+      /*---------------end of burger menu------------------*/
+
+
     .container{
         max-width:327px;
         padding-left: 0;
@@ -10,7 +91,7 @@
 
 
     .head__menu{
-        width:380px;
+        width: 100%;
     
 
     }
@@ -29,9 +110,9 @@
     .barf-caption{
         margin-bottom: 40px;
     }
-    .barf-food__block:last-child{
+    /* .barf-food__block:last-child{
         display: none;
-    }
+    } */
     .barf-food__block{
         height:427px;
         width:100%;
