@@ -76,12 +76,16 @@ h2{
 	align-items: center; */
 	/* width: 65%; */
 }
+.burger__ration-button{
+	display: none;
+}
 .logo {
-	
+	z-index: 10000;
 }
 .logo img{
 	width: 80px;
 	transition: all 0.3s;
+	
 }
 
 
@@ -106,7 +110,7 @@ h2{
 	width: 140px;
 	position: absolute;
 	right: 0px;
-	top: 100px;
+	bottom: 92px;
 	opacity: 0.6;
 }
 .big-boop {
@@ -116,6 +120,7 @@ h2{
   	background-repeat: no-repeat;
 	height: 100vh;
 	margin-bottom: 180px;
+	position: relative;
 }
 .big-boop__content {
 	height: 100vh;
@@ -197,6 +202,7 @@ button {
 	color: #434242;
 	margin-top: 15px;
 }
+
 .barf-caption__ul li::before {
 	width: 6px;
 	height: 6px;
@@ -205,14 +211,15 @@ button {
     color: #961914;
 }
 .barf-food {
+	width: 100%;
 	background: #EAD1D0;
 	position: relative;
 	display: flex;
-	margin-bottom: 200px;
+	/* margin-bottom: 200px; */
 	justify-content: space-between;
 }
 
-.barf-slider__swiper{
+.swiper2 {
 	background: #EAD1D0;
 	margin-bottom: 200px;
 	
@@ -222,15 +229,18 @@ button {
 	top: 44px;
 }
 
-#barf-id .barf-food__block{
-	width: 750px;
-}
+
 .barf-food__block {
-	width: 100%;
-	margin: 50px 50px;
-	/* padding: 56px 50px; */
+	max-width: 440px;
+	/* margin: 50px 50px; */
+	padding: 32px 80px;
+	
 	
 }
+.barf-food__list-items {
+	
+}
+
 .barf-food__head {
 	font-weight: 600;
 	font-size: 14px;
@@ -238,11 +248,13 @@ button {
 	text-transform: uppercase;
 }
 .barf-food__list {
-
 	display: flex;
-	flex-direction: column;
-	max-height: 180px;
-	flex-wrap: wrap;
+	
+	/* max-height: 180px; */
+	
+}
+.barf-food__list-items:first-child{
+	margin-right: 65px;
 }
 .barf-food__list-item{
 	font-family: 'Montserrat';
@@ -250,7 +262,7 @@ button {
 	font-size: 18px;
 	line-height: 250%;
 	color: #434242;
-	margin-right: 72px;
+	/* margin-right: 72px; */
 }
 .barf-food__list-item img {
 	margin-right: 16px;
@@ -400,7 +412,7 @@ button {
 }
 .about-title {
 	margin-bottom: 40px;
-	width: 416px;
+	max-width: 416px;
 }
 .about-text {
 	font-family: 'Montserrat';
@@ -411,7 +423,7 @@ button {
 	margin-top: 25px;
 }
 .about-pic {
-	height: 745px;
+	max-height: 745px;
 	margin-right: 4px;
 	position: relative;
 	left: -55px;
@@ -538,7 +550,7 @@ button {
 .footer-content {
 	display: flex;
 	align-items: center;
-	height: 530px;
+	height: 100%;
 }
 .footer-contacts {
 	height: 100%;
@@ -601,6 +613,7 @@ button {
 	position: relative;
 }
 .footer-mail{
+	padding-top: 110px;
  	max-width: 636px;
 	width: 100%;
 	
@@ -744,11 +757,12 @@ textarea::placeholder,input::placeholder {
 	border-bottom: 1px solid #961914;
 }
 .footer-down {
-	height: 76px;
+	
 	background-color:#69120E;
+	padding: 30px 105px;
 }
 .footer-down-content {
-	height: 76px;
+	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
