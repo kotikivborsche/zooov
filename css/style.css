@@ -653,21 +653,40 @@ button {
 	line-height: 140%;
 	color: #FFFFFF;
 }
-.red-input__name {
-	padding: 14px 13px;
+.client-input{
+	width: 306px;
+	height: 48px;
+	position: relative;
 }
-.red-input__email {
-	padding: 14px 13px;
-}
-.small__name,.small__email {
+.client-input label{
 	font-family: 'Montserrat';
+	font-style: normal;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 140%;
 	color: #FFFFFF;
-	opacity: 0.6;
+	
+
 	position: absolute;
+	top: 14px;
+	left: 13px;
+	transition: all linear 0.2s;
+
 }
+.client-input.active label{
+	font-size: 12px;
+	opacity: 0.6;
+	top: 4px;
+	left: 15px;
+
+}
+.red-input__name {
+	padding-top: 23px;
+}
+.red-input__email {
+	padding-top: 23px;
+}
+
 .client-question {
 	margin-bottom: 22px;
 }
