@@ -13,8 +13,26 @@
         display: block;
         height: 20px;
         width: 30px;
-        /* padding-top: 14px;
-        padding-bottom: 14px; */
+        
+      }
+      .burger.active svg{
+        
+        height: 30px;
+        
+      }
+      .burger.active .bar1{
+        transform-origin: 10px 9px;
+        transform: rotate(45deg) translate(0,-3px);
+      
+      }
+      .burger.active .bar2{
+        display: none;
+        
+      }
+      .burger.active .bar3{
+        transform-origin: 10px 9px;
+        transform: rotate(-45deg) translate(0,-3px);
+       
       }
       .head__menu.active .logo img {
         width: 38px;
@@ -43,6 +61,7 @@
       .bar {
         display: block;
         stroke: white;
+        transition: all linear 0.3s;
       }
 
       .menu-items .menu-item a {
@@ -299,7 +318,7 @@
 
     .footer-up {
       height: 1171px;
-      background-image: url(/img/footer_adap.png);
+      background-image: url(../img/footer_adap.png);
       border-radius: 2px;
     }
     .footer-content {
