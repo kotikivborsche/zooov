@@ -51,10 +51,6 @@
       .burger__ration-button{
         display: block;
       }
-      .client-input{
-        width: 100%;
-        margin-bottom: 16px;
-      }
     
      
     
@@ -350,17 +346,16 @@
     }
     .client-data{
       flex-direction: column;
-      margin-bottom: 0;
     }
     .red-input {
       width: 100%;
       border-radius: 2px;
     }
     .red-input__name{
-      
+      margin-bottom: 16px;
     }
     .client-question {
-      /* margin-bottom: 16px; */
+      margin-bottom: 16px;
     }
     .client-send {
       flex-direction: column;

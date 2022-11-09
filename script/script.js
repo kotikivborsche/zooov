@@ -160,20 +160,4 @@ burger__btn.addEventListener('click',function(){
     elem_burg.classList.toggle('active');
 })
 ////
-//// анимация лейблов в футере
-const footer__inputs = document.querySelectorAll('.client-input input');
-footer__inputs.forEach(inp => inp.addEventListener('focus',function(){
-  
-  let lab = inp.closest('.client-input');
-  
-  lab.classList.add('active');
-}))
-footer__inputs.forEach(inp => inp.addEventListener('blur',function(){
-  
-  let lab = inp.closest('.client-input');
-  if (inp.value === '') {
-    lab.classList.remove('active');
-  } 
-}))
-////
 
