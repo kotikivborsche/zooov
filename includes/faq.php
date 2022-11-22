@@ -6,9 +6,6 @@
                     <?php
                         $query = $pdo->query('SELECT * FROM `questions` ');
                         foreach($query as $row){
-                            if ($row['status']==0) {
-                               
-                            
                            
                     ?>
                     <div class="faq-question">
@@ -23,7 +20,7 @@
                     </div>
 
                     <?php
-                        }}
+                        }
                            
                     ?>
                     <!-- <div class="faq-question ">

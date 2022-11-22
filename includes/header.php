@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="import" href="modal_forms.html">
-
-
     <!-- стили -->
     
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-media.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     
     <!-- шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +22,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    
+
     <title>ZOOOV</title>
 </head>
 

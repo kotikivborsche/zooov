@@ -1,8 +1,6 @@
 <?php
 include 'includes/config.php';
-include 'functions.php';
 
-                                
 
 
 $footer_name = $_POST['footer_name'];
@@ -13,8 +11,6 @@ $sql = "INSERT INTO clients (name, email, question) VALUES (:name, :email, :ques
 
 $query = $pdo->prepare($sql);
 $query->execute(['name' => $footer_name,'email' => $footer_email,'question' => $footer_question]);
-
-
 
 header('Location: /zooov');
 ?>

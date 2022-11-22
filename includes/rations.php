@@ -16,13 +16,11 @@
                     <?php
                         $query = $pdo->query('SELECT * FROM `ration_cards` ');
                         foreach($query as $row){
-                           if ($row['status'] == 0) {
-                            
                            
                     ?>
                     
                     <div class="ration-cards__item swiper-slide">
-                        <img width="60px" class="ration-cards__item__mark" src=<?php echo 'img/'. $row['gost_pic']; ?> alt="">
+                        <img class="ration-cards__item__mark" src=<?php echo 'img/'. $row['gost_pic']; ?> alt="">
                         <img class="ration-cards__item__img" src= <?php echo 'img/'. $row['picture']; ?> alt="">
                         <p class="ration-cards__item__for"><?php echo $row['title']; ?></p>
                         <p class="ration-cards__item__ing"><?php echo $row['comp']; ?></p>
@@ -59,7 +57,7 @@
                     </div> -->
 
                     <?php
-                        }}
+                        }
                     ?>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -71,7 +69,7 @@
                 <!-- </div> -->
 
                 <!-- <div class="ration-calculation__button"> -->
-                    <a href="#" class="button red-button calculation-button  js-modal-open" data-open="#modal-1">Рассчитать</a>
+                    <a  class="button red-button calculation-button  js-modal-open" data-open="#modal-1">Рассчитать</a>
                     
                 <!-- </div> -->
 

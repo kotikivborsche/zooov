@@ -7,14 +7,7 @@
                     <div class="footer-contacts">
                         <h2 class="contacts__head">Контакты</h2>
                         <p class="contacts__text">Вы всегда можете с нами связаться по телефону или в мессенджерах</p>
-                        <p class="contacts__phone">
-                        <?php
-                            $query = $pdo->query('SELECT * FROM `main`');
-                            foreach($query as $row){
-                                echo $row['phone'];
-                            }
-                        ?>
-                        </p>
+                        <p class="contacts__phone">+7 (900)000-00-00</p>
                         <div class="pink-button"><a class="button contacts-button whatsapp">Написать в WhatsApp</a></div>
                         <div class="pink-button"><a class="button contacts-button telegram">Написать в Telegram</a></div>
                         <p class="contacts__text">Подписывайтесь на наш <a class="contacts__inst" href="https://www.instagram.com/zooov.ru">Instagram</a>
@@ -51,7 +44,7 @@
                                 <p>Даю согласие на обработку
                                 персональных данных</p>
                             </label>
-                           
+
                             <button type="submit" class="button pale-button js-modal-open" data-open="#modal-2">Отправить</button>
                         </div>
                     </form>

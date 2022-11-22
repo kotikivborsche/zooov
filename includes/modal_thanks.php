@@ -4,6 +4,14 @@
         <div class="modal__content">
             <h3 class="modal__title">Рассчет рациона</h1>
             <p class="modal__description pp ppp p">Сэнк ю вери мач.</p>
+    
+                
+                            
+                        
+                    
             </div>
+        
+
+
     </div>
 </div>

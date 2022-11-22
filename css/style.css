@@ -129,7 +129,6 @@ h2{
 	justify-content: center;
 }
 .big-boop__h1 {
-	
 	font-weight: 700;
 	font-size: 54px;
 	line-height: 130%;
@@ -285,15 +284,7 @@ button {
 .ration-cards {
  	display: flex;
 	justify-content: space-between;
-	
-	max-width: 100%;
 	margin-bottom: 80px;
-}
-.ration-cards__rat{
-	flex-wrap: wrap;
-}
-.ration-cards__item__rat{
-	margin-bottom: 110px;
 }
 .ration-cards__item{
 	width: 280px;
@@ -306,7 +297,6 @@ button {
 	margin-bottom: 45px;
 }
 .ration-cards__item__mark{
-	width: 70px;
 	position: absolute;
 	top: 15px;
 	left: 15px;
@@ -498,21 +488,10 @@ button {
 	margin-bottom: 32px;
 
 }
-.faq-question__faq {
-	border-bottom: 1px solid #E5E5E5;
-	margin-bottom: 32px;
-
-}
-
 .faq-question__header {
 	cursor: url(../img/pointer.svg),pointer;
 	display: flex;
 	justify-content: space-between;
-
-}
-.faq-question__header__faq {
-	
-	
 
 }
 .faq-question__text {
@@ -540,15 +519,6 @@ button {
 	transition: 0.2s all ease;
 
 
-}
-.faq-question__answer__faq{
-	font-family: 'Montserrat';
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 140%;
-	color: #434242;
-	width: calc(100% - 75px);
-	margin-bottom: 30px;
 }
 .faq-question.active .faq-question__answer {
 	opacity: 1;
@@ -686,40 +656,21 @@ button {
 	line-height: 140%;
 	color: #FFFFFF;
 }
-.client-input{
-	width: 306px;
-	height: 48px;
-	position: relative;
-}
-.client-input label{
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 140%;
-	color: #FFFFFF;
-	
-
-	position: absolute;
-	top: 14px;
-	left: 13px;
-	transition: all linear 0.2s;
-
-}
-.client-input.active label{
-	font-size: 12px;
-	opacity: 0.6;
-	top: 4px;
-	left: 15px;
-
-}
 .red-input__name {
-	padding-top: 23px;
+	padding: 14px 13px;
 }
 .red-input__email {
-	padding-top: 23px;
+	padding: 14px 13px;
 }
-
+.small__name,.small__email {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 140%;
+	color: #FFFFFF;
+	opacity: 0.6;
+	position: absolute;
+}
 .client-question {
 	margin-bottom: 22px;
 }
@@ -980,10 +931,3 @@ textarea::placeholder,input::placeholder {
 .burger__button-svg{
 	z-index: 10000;
 }
-
-.faq-title__faq{
-	margin-bottom: 50px;
-}
-
-
-
