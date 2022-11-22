@@ -16,7 +16,7 @@
 	position: relative;
 }
 a{
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 	text-decoration: none;
 }
 p{
@@ -114,7 +114,7 @@ h2{
 	opacity: 0.6;
 }
 .big-boop {
-	background-image: url("/img/menu_dog.png");
+	background-image: url("../img/menu_dog.png");
     background-size: cover;
     background-position: center;
   	background-repeat: no-repeat;
@@ -129,6 +129,7 @@ h2{
 	justify-content: center;
 }
 .big-boop__h1 {
+	
 	font-weight: 700;
 	font-size: 54px;
 	line-height: 130%;
@@ -149,7 +150,7 @@ h2{
 }
 
 button {
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 	border: none;
 }
 
@@ -161,7 +162,7 @@ button {
 	line-height: 140%;
 	text-align: center;
 	color: #FFFFFF;
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 }
 .big-boop__button {
 	width: 227px;
@@ -206,7 +207,7 @@ button {
 .barf-caption__ul li::before {
 	width: 6px;
 	height: 6px;
-	content: url(/img/ellipse_list.svg); 
+	content: url(../img/ellipse_list.svg); 
     padding-right: 6px; 
     color: #961914;
 }
@@ -284,7 +285,15 @@ button {
 .ration-cards {
  	display: flex;
 	justify-content: space-between;
+	
+	max-width: 100%;
 	margin-bottom: 80px;
+}
+.ration-cards__rat{
+	flex-wrap: wrap;
+}
+.ration-cards__item__rat{
+	margin-bottom: 110px;
 }
 .ration-cards__item{
 	width: 280px;
@@ -297,6 +306,7 @@ button {
 	margin-bottom: 45px;
 }
 .ration-cards__item__mark{
+	width: 70px;
 	position: absolute;
 	top: 15px;
 	left: 15px;
@@ -488,10 +498,21 @@ button {
 	margin-bottom: 32px;
 
 }
+.faq-question__faq {
+	border-bottom: 1px solid #E5E5E5;
+	margin-bottom: 32px;
+
+}
+
 .faq-question__header {
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 	display: flex;
 	justify-content: space-between;
+
+}
+.faq-question__header__faq {
+	
+	
 
 }
 .faq-question__text {
@@ -513,15 +534,27 @@ button {
 
 	transition: all linear 0.3s;
     opacity: 0;
-    height: 0;
-    overflow: hidden;
 
+    height: 0;
+	overflow: hidden;
+	transition: 0.2s all ease;
+
+
+}
+.faq-question__answer__faq{
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	color: #434242;
+	width: calc(100% - 75px);
+	margin-bottom: 30px;
 }
 .faq-question.active .faq-question__answer {
 	opacity: 1;
     height: auto;
 	padding-bottom: 32px;
-	margin-top: 12px;
+	margin-top: 22px;
 }
 .faq-question.active .faq-question__text {
 	
@@ -544,7 +577,7 @@ button {
 }
 .footer-up {
 	height: 530px;
-	background-image: url(/img/footer_back.png);
+	background-image: url(../img/footer_back.png);
 	border-radius: 2px;
 }
 .footer-content {
@@ -593,7 +626,7 @@ button {
 	background-color: rgba(255, 255,255, 0.4);	
 }
 .telegram::before {
-	content: url(/img/TelegramLogo.svg);
+	content: url(../img/TelegramLogo.svg);
 	position: absolute;
 	width: 18px;
 	height: 18px;
@@ -601,7 +634,7 @@ button {
 	left: 14px;
 }
 .whatsapp::before {
-	content: url(/img/WhatsappLogo.png);
+	content: url(../img/WhatsappLogo.png);
 	position: absolute;
 	width: 18px;
 	height: 18px;
@@ -720,10 +753,10 @@ textarea::placeholder,input::placeholder {
 	background-color: #fff;
 	border-radius: 2px;
 	margin-right: 8px;
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 }
 .form__checkbox:checked + .form__fake-checkbox {
-	background-image: url(/img/checked_2.svg);
+	background-image: url(../img/checked_2.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -737,7 +770,7 @@ textarea::placeholder,input::placeholder {
 	font-size: 12px;
 	line-height: 140%;
 	color: #FFFFFF;
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 }
 .form__checkbox-label p {
 	font-family: 'Montserrat';
@@ -829,7 +862,7 @@ textarea::placeholder,input::placeholder {
     display: none;
 	
 	z-index: 500;
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 }
 .modal.active{
     display: flex;
@@ -930,12 +963,12 @@ textarea::placeholder,input::placeholder {
 
 .modal__close img{
 	max-width:45px ;
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 }
 
 .burger svg{
 	display: none;
-	cursor: url(/img/pointer.svg),pointer;
+	cursor: url(../img/pointer.svg),pointer;
 	position: relative;
 
 }
@@ -947,3 +980,10 @@ textarea::placeholder,input::placeholder {
 .burger__button-svg{
 	z-index: 10000;
 }
+
+.faq-title__faq{
+	margin-bottom: 50px;
+}
+
+
+

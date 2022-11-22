@@ -12,12 +12,10 @@ window.addEventListener('scroll', function() {
 //// faq-questions
 let elems = document.querySelectorAll('.faq-question');
 elems.forEach(elem => elem.addEventListener('click', function () {
-    if(elem.classList.contains('active')){
-        elem.classList.remove('active');
-    }
-    else {
-        elem.classList.add('active');
-    }  
+    
+    elem.classList.toggle('active');
+    
+    
 }))
 ////
 //// Открытие модальных форм
@@ -178,4 +176,5 @@ footer__inputs.forEach(inp => inp.addEventListener('blur',function(){
   } 
 }))
 ////
+
 
